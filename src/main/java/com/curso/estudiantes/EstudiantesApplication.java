@@ -71,6 +71,7 @@ public class EstudiantesApplication implements CommandLineRunner {
 				estudiante.setNombre(nombre);
 				estudiante.setApellido(apellido);
 				estudiante.setTelefono(tel);
+				estudiante.setMail(mail);
 				estudianteServicio.guardarEstudiante(estudiante);
 				logger.info(nl+"Estudiante agregado: "+estudiante+nl);
 			}
@@ -91,6 +92,7 @@ public class EstudiantesApplication implements CommandLineRunner {
 					estudiante.setNombre(nombre);
 					estudiante.setApellido(apellido);
 					estudiante.setTelefono(tel);
+					estudiante.setMail(mail);
 					estudianteServicio.guardarEstudiante(estudiante);
 					logger.info(nl+"Estudiante modificado: "+estudiante+nl);
 				} else
